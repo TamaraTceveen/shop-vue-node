@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <v-header 
+        v-model="searchValue"
+         :basketgoods="basketgoods" @delete="removeItem">
+        </v-header>
+        <v-navigation></v-navigation>
+        <div class="banner center">
+            <div class="banner_content">
+                <h1 class="banner_content_h1">THE BRAND</h1>
+                <h2 class="banner_content_h2">OF LUXERIOUS <span class="color_text">FASHION</span></h2>
+            </div>
+        </div>
+        <div class="gallery center">
+            <div class="gallery_left">
+                <div class="gallery_man">
+                    <p class="gallery_content">hOT dEAL <br><span class="color_text gallery_content_big">FOR MEN</span>
+                    </p>
+                </div>
+                <div class="gallery_acsessuary">
+                    <p class="gallery_content">LUXIROUS & trendy <br><span
+                            class="color_text gallery_content_big">ACCESORIES</span>
+                    </p>
+                </div>
+            </div>
+            <div class="gallery_right">
+                <div class="gallery_woman">
+                    <p class="gallery_content">30% offer <br><span class="color_text gallery_content_big">women</span>
+                    </p>
+                </div>
+                <div class="gallery_kids">
+                    <p class="gallery_content">new arrivals <br><span class="color_text gallery_content_big">FOR
+                            kids</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="fetured center">
+            <h3 class="fetured_h3">Fetured Items</h3>
+            <p class="fetured_content">Shop for items based on what we fetured in this week</p>
+            <v-product-list class="fetured_blocks"
+            v-bind:show=8
+            v-bind:goods="filteredGoods" 
+            v-on:add="addToBasket">
+            </v-product-list>
+        </div>
+        <div class="fetured_button">
+            <a href="product.html" class="fetured_button_center">Browse All Product</a>
+        </div>
+        <div class="sale center">
+            <a href="#" class="sale_offer">
+                <p class="sale_offer_content">30% <span class="color_text">OFFER</span><br><span
+                        class="sale_offer_content_mini"> FOR WOMEN</span></p>
+            </a>
+            <v-advantages class="sale_list"></v-advantages>
+        </div>
+        <footer>
+            <div class="subscribe_img">
+                <div class="subscribe center">
+                    <div class="subscribe_quote">
+                        <img src="img/face.png">
+                        <div class="subscribe_quote_slider">
+                            <blockquote class="subscribe_quote_content">
+                                <p class="subscribe_quote_text">
+                                    "Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
+                                    condimentum a. Aliquam condimentum mattis neque sed pretium"
+                                </p>
+                                <cite class="subscribe_quote_cite"><span class="subscribe_quote_text color_text">Bin
+                                        Burhan </span><br>Dhaka, Bd</cite>
+                            </blockquote>
+                            <a href="#">
+                                <div class="subscribe_link"></div>
+                            </a>
+                            <a href="#">
+                                <div class="subscribe_link"></div>
+                            </a>
+                            <a href="#">
+                                <div class="subscribe_link"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="subscribe_forms">
+                        <p class="subscribe_form_firstline">Subscribe</p>
+                        <p class="subscribe_form_secondline">FOR OUR NEWLETTER AND PROMOTION</p>
+                        <form class="subscribe_form" action="#">
+                            <input class="subscribe_form_input" type="email" name="#" id="#"
+                                placeholder="Enter Your Email">
+                            <button class="subscribe_form_button">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_info center">
+                <div class="footer_info_column">
+                    <v-logo></v-logo>
+                    <div class="footer_info_content">
+                        <p>
+                            Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                            syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
+                            expanded array of processes and cross-unit partnerships.
+                        </p>
+                        <p>
+                            Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize
+                            superior initiatives for wireless technologies. Dynamically optimize.
+                        </p>
+                        <p>
+                            Objectively strategize seamless relationships via resource sucking testing procedures.
+                            Proactively cultivate next-generation results for value-added methodologies.
+                        </p>
+                        <p>
+                            Dynamically plagiarize unique methodologies after performance based methodologies.
+                            Monotonectally empower stand-alone mindshare rather than ubiquitous opportunities.
+                        </p>
+                        <p>
+                            Dynamically orchestrate resource sucking scenarios after alternative synergy. Compellingly
+                            envisioneer corporate methods of empowerment before standards compliant technologies.
+                            Objectively facilitate progressive.
+                        </p>
+                    </div>
+                </div>
+                <v-footernavigate></v-footernavigate>
+            </div>
+            <div class="footer_line center">
+                <p>&copy; 2020 Brand All Rights Reserved.</p>
+                <v-socialmedia></v-socialmedia>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

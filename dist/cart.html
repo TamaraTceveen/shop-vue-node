@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <v-header :basketgoods="basketgoods" @delete="removeItem"></v-header>
+        <v-navigation></v-navigation>
+        <div class="arrivals center">
+            <div class="arrivals_left">
+                new arrivals
+            </div>
+            <nav class="arrivals_nav">
+                <a href="index.html" class="arrivals_nav_link">Home</a> /
+                <a href="#" class="arrivals_nav_link">Men</a> /
+                <a href="#" class="arrivals_nav_link">New Arrivals</a>
+            </nav>
+        </div>
+        <div class="table_cart center">
+            <table class="table_cart_table">
+                <tr class="table_cart_tr">
+                    <th colspan="2" class="table_cart_th">Product Details</th>
+                    <th class="table_cart_th">unite Price</th>
+                    <th class="table_cart_th">Quantity</th>
+                    <th class="table_cart_th">shipping</th>
+                    <th class="table_cart_th">Subtotal</th>
+                    <th class="table_cart_th">ACTION</th>
+                </tr>
+                <tr class="table_cart_tr">
+                    <td class="table_cart_td">
+                        <a href="single-page.html">
+                            <img src="img/fetured/2879cart.png">
+                        </a>
+                    </td>
+                    <td class="table_cart_td">
+                        <a href="single-page.html">
+                            <p><span class="table_cart_td_name">Mango People T-shirt</span></p>
+                        </a>
+                        <br>
+                        <p><span class="table_cart_td_bold">Color:</span> Red <br>
+                            <span class="table_cart_td_bold">Size:</span> Xll
+                        </p>
+                    </td>
+                    <td class="table_cart_td">$150</td>
+                    <td class="table_cart_td">
+                        <input type="number" name="#" id="#" value="2" min="1" class="table_cart_td_quantity">
+                    </td>
+                    <td class="table_cart_td">FREE</td>
+                    <td class="table_cart_td">$300</td>
+                    <td class="table_cart_td">
+                        <div class="table_cart_cross"><i class="icon-cancel-circled"></i></div>
+                    </td>
+                </tr>
+                <tr class="table_cart_tr">
+                    <td class="table_cart_td">
+                        <a href="single-page.html">
+                            <img src="img/fetured/2905cart.png">
+                        </a>
+                    </td>
+                    <td class="table_cart_td">
+                        <a href="single-page.html">
+                            <p><span class="table_cart_td_name">Mango People T-shirt</span></p>
+                        </a>
+                        <br>
+                        <p><span class="table_cart_td_bold">Color:</span> Red <br>
+                            <span class="table_cart_td_bold">Size:</span> Xll
+                        </p>
+                    </td>
+                    <td class="table_cart_td">$150</td>
+                    <td class="table_cart_td">
+                        <input type="number" name="#" id="#" value="2" min="1" class="table_cart_td_quantity">
+                    </td>
+                    <td class="table_cart_td">FREE</td>
+                    <td class="table_cart_td">$300</td>
+                    <td class="table_cart_td">
+                        <div class="table_cart_cross"><i class="icon-cancel-circled"></i></div>
+                    </td>
+                </tr>
+                <tr class="table_cart_tr">
+                    <td class="table_cart_td">
+                        <a href="single-page.html">
+                            <img src="img/fetured/2920cart.png">
+                        </a>
+                    </td>
+                    <td class="table_cart_td">
+                        <a href="single-page.html">
+                            <p><span class="table_cart_td_name">Mango People T-shirt</span></p>
+                        </a>
+                        <br>
+                        <p><span class="table_cart_td_bold">Color:</span> Red <br>
+                            <span class="table_cart_td_bold">Size:</span> Xll
+                        </p>
+                    </td>
+                    <td class="table_cart_td">$150</td>
+                    <td class="table_cart_td">
+                        <input type="number" name="#" id="#" value="2" min="1" class="table_cart_td_quantity">
+                    </td>
+                    <td class="table_cart_td">FREE</td>
+                    <td class="table_cart_td">$300</td>
+                    <td class="table_cart_td">
+                        <div class="table_cart_cross"><i class="icon-cancel-circled"></i></div>
+                    </td>
+                </tr>
+            </table>
+            <div class="cart_buttons center">
+                <button class="cart_buttons_sh">cLEAR SHOPPING CART</button>
+                <button class="cart_buttons_sh">cONTINUE sHOPPING</button>
+            </div>
+            <div class="cart_forms">
+                <form action="#" class="cart_forms_adr">
+                    <p>Shipping Adress</p>
+                    <div class="cart_forms_select">
+                        <select name="country" id="#" class="cart_forms_inp cart_forms_inp_select">
+                            <option value="netherlands">Netherlands</option>
+                            <option value="germany">Germany</option>
+                            <option value="france">France</option>
+                        </select>
+                    </div>
+                    <input type="text" name="#" id="#" placeholder="City" class="cart_forms_inp">
+                    <input type="text" name="#" id="#" placeholder="Postcode / Zip" class="cart_forms_inp">
+                    <button class="cart_forms_btns">get a quote</button>
+                </form>
+                <form action="#" class="cart_forms_disc">
+                    <p>coupon discount</p>
+                    <p class="cart_forms_disc_p">Enter your coupon code if you have one</p>
+                    <input type="text" name="#" id="#" placeholder="Coupon code" class="cart_forms_inp">
+                    <button class="cart_forms_btns">Apply coupon</button>
+                </form>
+                <div class="cart_forms_check">
+                    <div class="cart_forms_check_line">Sub total <div class="cart_forms_check_price">$900</div>
+                    </div>
+                    <div class="cart_forms_check_p cart_forms_check_line">GRAND TOTAL <div
+                            class="cart_forms_check_price"><span class="color_text">$900</span></div>
+                    </div>
+                    <button class="cart_forms_check_btn">proceed to checkout</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="subscribe center">
+                <div class="subscribe_quote">
+                    <img src="img/face.png">
+                    <div class="subscribe_quote_slider">
+                        <blockquote class="subscribe_quote_content">
+                            <p class="subscribe_quote_text">
+                                "Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a.
+                                Aliquam condimentum mattis neque sed pretium"
+                            </p>
+                            <cite class="subscribe_quote_cite"><span class="subscribe_quote_text color_text">Bin Burhan
+                                </span><br>Dhaka, Bd</cite>
+                        </blockquote>
+                        <a href="#">
+                            <div class="subscribe_link"></div>
+                        </a>
+                        <a href="#">
+                            <div class="subscribe_link"></div>
+                        </a>
+                        <a href="#">
+                            <div class="subscribe_link"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="subscribe_forms">
+                    <p class="subscribe_form_firstline">Subscribe</p>
+                    <p class="subscribe_form_secondline">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form class="subscribe_form" action="#">
+                        <input class="subscribe_form_input" type="email" name="#" id="#" placeholder="Enter Your Email">
+                        <button class="subscribe_form_button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer_info center">
+                <div class="footer_info_column">
+                    <v-logo></v-logo>
+                    <div class="footer_info_content">
+                        <p>
+                            Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                            syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
+                            expanded array of processes and cross-unit partnerships.
+                        </p>
+                        <p>
+                            Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize
+                            superior initiatives for wireless technologies. Dynamically optimize.
+                        </p>
+                        <p>
+                            Objectively strategize seamless relationships via resource sucking testing procedures.
+                            Proactively cultivate next-generation results for value-added methodologies.
+                        </p>
+                        <p>
+                            Dynamically plagiarize unique methodologies after performance based methodologies.
+                            Monotonectally empower stand-alone mindshare rather than ubiquitous opportunities.
+                        </p>
+                        <p>
+                            Dynamically orchestrate resource sucking scenarios after alternative synergy. Compellingly
+                            envisioneer corporate methods of empowerment before standards compliant technologies.
+                            Objectively facilitate progressive.
+                        </p>
+                    </div>
+                </div>
+                <v-footernavigate></v-footernavigate>
+            </div>
+            <div class="footer_line center">
+                <p>&copy; 2020 Brand All Rights Reserved.</p>
+                <v-socialmedia></v-socialmedia>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

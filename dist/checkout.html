@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <v-header :basketgoods="basketgoods" @delete="removeItem"></v-header>
+        <v-navigation></v-navigation>
+        <div class="arrivals center">
+            <div class="arrivals_left">
+                new arrivals
+            </div>
+            <nav class="arrivals_nav">
+                <a href="index.html" class="arrivals_nav_link">Home</a> /
+                <a href="#" class="arrivals_nav_link">Men</a> /
+                <a href="#" class="arrivals_nav_link">New Arrivals</a>
+            </nav>
+        </div>
+        <div class="checkout center">
+            <ul>
+                <li class="checkout_list">
+                    <details open>
+                        <summary class="checkout_summ">01. Shipping Adress</summary>
+                        <div class="shipping">
+                            <div class="shipping_block">
+                                <form action="#" class="shipping_block">
+                                    <div>
+                                        <p class="checkout_h3">Check as a guest or register</p>
+                                        <p>Register with us for future convenience</p>
+                                    </div>
+                                    <div class="checkout_h3">
+                                        <div class="shipping_check">
+                                            <input type="radio" name="register" id="guest" value="guest">
+                                            <label for="guest">checkout as guest</label><br>
+                                        </div>
+                                        <div class="shipping_check">
+                                            <input type="radio" name="register" id="reg" value="reg">
+                                            <label for="reg">register</label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="checkout_h3">register and save time!</p>
+                                        <p>Register with us for future convenience</p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fas fa-angle-double-right"></i> Fast and easy checkout</p>
+                                        <p><i class="fas fa-angle-double-right"></i> Easy access to your order history
+                                            and status</p>
+                                    </div>
+                                    <button class="checkout_button">Continue</button>
+                                </form>
+                            </div>
+                            <div class="shipping_block">
+                                <form action="#" class="shipping_login">
+                                    <div>
+                                        <p class="checkout_h3">Already registed?</p>
+                                        <p>Please log in below</p>
+                                    </div>
+                                    <div>
+                                        <p class="checkout_h4">EMAIL ADDRESS <span class="red_text">*</span></p>
+                                        <input required type="email" name="#" id="#" class="checkout_input">
+                                    </div>
+                                    <div>
+                                        <p class="checkout_h4">PASSWORD <span class="red_text">*</span></p>
+                                        <input required type="password" name="#" id="#" class="checkout_input">
+                                    </div>
+                                    <p class="checkout_h4 red_text">* Required Fileds</p>
+                                    <div>
+                                        <button class="checkout_button">Log in</button>
+                                        <a href="#" class="checkout_h4">Forgot Password ?</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </details>
+                </li>
+                <li class="checkout_list">
+                    <details>
+                        <summary class="checkout_summ">
+                            02. BILLING INFORMATION
+                        </summary>
+                        <div class="checkout_empty"></div>
+                    </details>
+                </li>
+                <li class="checkout_list">
+                    <details>
+                        <summary class="checkout_summ">
+                            03. SHIPPING INFORMATION
+                        </summary>
+                        <div class="checkout_empty"></div>
+                    </details>
+                </li>
+                <li class="checkout_list">
+                    <details>
+                        <summary class="checkout_summ">
+                            04. SHIPPING METHOD
+                        </summary>
+                        <div class="checkout_empty"></div>
+                    </details>
+                </li>
+                <li class="checkout_list">
+                    <details>
+                        <summary class="checkout_summ">
+                            05. PAYMENT METHOD
+                        </summary>
+                        <div class="checkout_empty"></div>
+                    </details>
+                </li>
+                <li class="checkout_list">
+                    <details>
+                        <summary class="checkout_summ">
+                            06. ORDER REVIEW
+                        </summary>
+                        <div class="checkout_empty"></div>
+                    </details>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <div class="subscribe center">
+                <div class="subscribe_quote">
+                    <img src="img/face.png">
+                    <div class="subscribe_quote_slider">
+                        <blockquote class="subscribe_quote_content">
+                            <p class="subscribe_quote_text">
+                                "Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a.
+                                Aliquam condimentum mattis neque sed pretium"
+                            </p>
+                            <cite class="subscribe_quote_cite"><span class="subscribe_quote_text color_text">Bin Burhan
+                                </span><br>Dhaka, Bd</cite>
+                        </blockquote>
+                        <a href="#">
+                            <div class="subscribe_link"></div>
+                        </a>
+                        <a href="#">
+                            <div class="subscribe_link"></div>
+                        </a>
+                        <a href="#">
+                            <div class="subscribe_link"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="subscribe_forms">
+                    <p class="subscribe_form_firstline">Subscribe</p>
+                    <p class="subscribe_form_secondline">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form class="subscribe_form" action="#">
+                        <input class="subscribe_form_input" type="email" name="#" id="#" placeholder="Enter Your Email">
+                        <button class="subscribe_form_button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer_info center">
+                <div class="footer_info_column">
+                    <v-logo></v-logo>
+                    <div class="footer_info_content">
+                        <p>
+                            Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                            syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
+                            expanded array of processes and cross-unit partnerships.
+                        </p>
+                        <p>
+                            Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize
+                            superior initiatives for wireless technologies. Dynamically optimize.
+                        </p>
+                        <p>
+                            Objectively strategize seamless relationships via resource sucking testing procedures.
+                            Proactively cultivate next-generation results for value-added methodologies.
+                        </p>
+                        <p>
+                            Dynamically plagiarize unique methodologies after performance based methodologies.
+                            Monotonectally empower stand-alone mindshare rather than ubiquitous opportunities.
+                        </p>
+                        <p>
+                            Dynamically orchestrate resource sucking scenarios after alternative synergy. Compellingly
+                            envisioneer corporate methods of empowerment before standards compliant technologies.
+                            Objectively facilitate progressive.
+                        </p>
+                    </div>
+                </div>
+                <v-footernavigate></v-footernavigate>
+            </div>
+            <div class="footer_line center">
+                <p>&copy; 2020 Brand All Rights Reserved.</p>
+                <v-socialmedia></v-socialmedia>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

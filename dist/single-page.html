@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <v-header :basketgoods="basketgoods" @delete="removeItem"></v-header>
+        <v-navigation></v-navigation>
+        <div class="arrivals center">
+            <div class="arrivals_left">
+                new arrivals
+            </div>
+            <nav class="arrivals_nav">
+                <a href="index.html" class="arrivals_nav_link">Home</a> /
+                <a href="#" class="arrivals_nav_link">Men</a> /
+                <a href="#" class="arrivals_nav_link">New Arrivals</a>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="main_button"><i class="fas fa-angle-left"></i></div>
+            <div class="main_center">
+                <img src="img/fetured/2490big.jpg" alt="">
+            </div>
+            <div class="main_button"><i class="fas fa-angle-right"></i></div>
+        </div>
+        <div class="content center">
+            <div class="content_inside">
+                <div class="content_inside_head">
+                    <p>WOMEN COLLECTION</p>
+                    <p class="item_name">Moschino Cheap And Chic</p>
+                </div>
+
+                <div class="name_content">
+                    Compellingly actualize fully researched processes before proactive outsourcing. Progressively
+                    syndicate collaborative architectures before cutting-edge services. Completely visualize parallel
+                    core competencies rather than exceptional portals.
+                    <div class="materials">
+                        <p>MATERIAL: <span class="material_dark"> COTTON</span></p>
+                        <p>DESIGNER: <span class="material_dark"> BINBURHAN</span></p>
+                    </div>
+                </div>
+
+                <p class="main_price">$561</p>
+                <form action="#" class="filters">
+                    <div class="filter_item">
+                        <label for="colors" class="filter_item_label">CHOOSE COLOR</label>
+                        <div class="select-div">
+                            <select name="colors" id="colors" class="filter_item_option">
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                                <option value="blue">Blue</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter_item">
+                        <label for="size" class="filter_item_label">CHOOSE SIZE</label>
+                        <div class="select-div">
+                            <select name="size" id="size" class="filter_item_option">
+                                <option value="large">L</option>
+                                <option value="xlarge">XL</option>
+                                <option value="xxlarge">XXL</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter_item">
+                        <label for="quantity" class="filter_item_label">QUANTITY</label>
+                        <div class="select-div">
+                            <select name="quantity" id="quamtity" class="filter_item_option">
+                                <option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="item_button"><i class="fas fa-shopping-cart icon-card"></i> Add to Cart</button>
+                </form>
+            </div>
+        </div>
+        <div class="also_items_block center">
+            <h3 class="fetured_h3">YOU MAY LIKE ALSO</h3>
+            <div class="also_items">
+                <div class="fetured_block product">
+                    <a href="#">
+                        <img src="img/fetured/2748.png" alt="shirt" class="fetured_img">
+                    </a>
+                    <a href="#" class="fetured_overlay">
+                        <img class="fetured_overlay_img" src="img/card_white.png"> Add to Cart
+                    </a>
+                    <div class="fetured_block_content">
+                        <a href="#" class="fetured_link">
+                            <p>BLAZE LEGGINGS</p>
+                        </a>
+                        <p class="color_text fetured_block_price">$52.00
+                            <img class="fetured_stars" src="img/fetured/stars.png">
+                        </p>
+                    </div>
+                </div>
+                <div class="fetured_block product">
+                    <a href="#">
+                        <img src="img/fetured/2772.png" alt="shirt" class="fetured_img">
+                    </a>
+                    <a href="#" class="fetured_overlay">
+                        <img class="fetured_overlay_img" src="img/card_white.png"> Add to Cart
+                    </a>
+                    <div class="fetured_block_content">
+                        <a href="#" class="fetured_link">
+                            <p>ALEXA SWEATER</p>
+                        </a>
+                        <p class="color_text fetured_block_price">$52.00
+                            <img class="fetured_stars" src="img/fetured/stars.png">
+                        </p>
+                    </div>
+                </div>
+                <div class="fetured_block product">
+                    <a href="#">
+                        <img src="img/fetured/2782.png" alt="shirt" class="fetured_img">
+                    </a>
+                    <a href="#" class="fetured_overlay">
+                        <img class="fetured_overlay_img" src="img/card_white.png"> Add to Cart
+                    </a>
+                    <div class="fetured_block_content">
+                        <a href="#" class="fetured_link">
+                            <p>AGNES TOP</p>
+                        </a>
+                        <p class="color_text fetured_block_price">$52.00
+                            <img class="fetured_stars" src="img/fetured/stars.png">
+                        </p>
+                    </div>
+                </div>
+                <div class="fetured_block product">
+                    <a href="#">
+                        <img src="img/fetured/2783.png" alt="shirt" class="fetured_img">
+                    </a>
+                    <a href="#" class="fetured_overlay">
+                        <img class="fetured_overlay_img" src="img/card_white.png"> Add to Cart
+                    </a>
+                    <div class="fetured_block_content">
+                        <a href="#" class="fetured_link">
+                            <p>SYLVA SWEATER</p>
+                        </a>
+                        <p class="color_text fetured_block_price">$52.00
+                            <img class="fetured_stars" src="img/fetured/stars.png">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="subscribe center">
+                <div class="subscribe_quote">
+                    <img src="img/face.png">
+                    <div class="subscribe_quote_slider">
+                        <blockquote class="subscribe_quote_content">
+                            <p class="subscribe_quote_text">
+                                "Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a.
+                                Aliquam condimentum mattis neque sed pretium"
+                            </p>
+                            <cite class="subscribe_quote_cite"><span class="subscribe_quote_text color_text">Bin Burhan
+                                </span><br>Dhaka, Bd</cite>
+                        </blockquote>
+                        <a href="#">
+                            <div class="subscribe_link"></div>
+                        </a>
+                        <a href="#">
+                            <div class="subscribe_link"></div>
+                        </a>
+                        <a href="#">
+                            <div class="subscribe_link"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="subscribe_forms">
+                    <p class="subscribe_form_firstline">Subscribe</p>
+                    <p class="subscribe_form_secondline">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form class="subscribe_form" action="#">
+                        <input class="subscribe_form_input" type="email" name="#" id="#" placeholder="Enter Your Email">
+                        <button class="subscribe_form_button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer_info center">
+                <div class="footer_info_column">
+                    <v-logo></v-logo>
+                    <div class="footer_info_content">
+                        <p>
+                            Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                            syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
+                            expanded array of processes and cross-unit partnerships.
+                        </p>
+                        <p>
+                            Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize
+                            superior initiatives for wireless technologies. Dynamically optimize.
+                        </p>
+                        <p>
+                            Objectively strategize seamless relationships via resource sucking testing procedures.
+                            Proactively cultivate next-generation results for value-added methodologies.
+                        </p>
+                        <p>
+                            Dynamically plagiarize unique methodologies after performance based methodologies.
+                            Monotonectally empower stand-alone mindshare rather than ubiquitous opportunities.
+                        </p>
+                        <p>
+                            Dynamically orchestrate resource sucking scenarios after alternative synergy. Compellingly
+                            envisioneer corporate methods of empowerment before standards compliant technologies.
+                            Objectively facilitate progressive.
+                        </p>
+                    </div>
+                </div>
+                <v-footernavigate></v-footernavigate>
+            </div>
+            <div class="footer_line center">
+                <p>&copy; 2020 Brand All Rights Reserved.</p>
+                <v-socialmedia></v-socialmedia>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

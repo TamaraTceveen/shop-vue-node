@@ -1,0 +1,110 @@
+[
+    {
+        "productLink": "single-page.html",
+        "productImg": "img/fetured/man_shirt1193.jpg",
+        "productTitle": "Mango People T-shirt",
+        "productId": 1193,
+        "productPrice": 52.00,
+        "imgstars": "img/fetured/stars.png",
+        "quantity": 1
+    },
+    {
+        "productLink": "single-page.html",
+        "productImg": "img/fetured/woman_blouse1201.jpg",
+        "productTitle": "Mango People Blouse",
+        "productId": 1201,
+        "productPrice": 43.00,
+        "imgstars": "img/fetured/stars.png",
+        "quantity": 1
+    },
+    {
+        "productLink": "single-page.html",
+        "productImg": "img/fetured/man_scirt1209.jpg",
+        "productTitle": "Mango People Scirt",
+        "productId": 1209,
+        "productPrice": 120.00,
+        "imgstars": "img/fetured/stars.png",
+        "quantity": 1
+    },
+    {
+        "productLink": "single-page.html",
+        "productImg": "img/fetured/woman_blouse1240.jpg",
+        "productTitle": "Mango People Blouse",
+        "productId": 1240,
+        "productPrice": 63.00,
+        "imgstars": "img/fetured/stars.png",
+        "quantity": 1
+    },
+    {
+        "productLink": "single-page.html",
+        "productImg": "img/fetured/woman_blouse1248.jpg",
+        "productTitle": "Mango People Blouse",
+        "productId": 1248,
+        "productPrice": 35.00,
+        "imgstars": "img/fetured/stars.png",
+        "quantity": 1
+    },
+    {
+        "productLink": "single-page.html",
+        "productImg": "img/fetured/man_jacket1256.jpg",
+        "productTitle": "Mango People Jacket",
+        "productId": 1256,
+        "productPrice": 82.00,
+        "imgstars": "img/fetured/stars.png",
+        "quantity": 1
+    },
+    {
+        "productLink": "single-page.html",
+        "productImg": "img/fetured/man_pants1264.jpg",
+        "productTitle": "Mango People Pants",
+        "productId": 1264,
+        "productPrice": 56.00,
+        "imgstars": "img/fetured/stars.png",
+        "quantity": 1
+    },
+    {
+        "productLink": "single-page.html",
+        "productImg": "img/fetured/man_hoodey1272.jpg",
+        "productTitle": "Mango People Hoodey",
+        "productId": 1272,
+        "productPrice": 65.00,
+        "imgstars": "img/fetured/stars.png",
+        "quantity": 1
+    },
+    {
+        "productLink": "single-page.html",
+        "productImg": "img/fetured/2748.png",
+        "productTitle": "Mango People Blaze Leggings",
+        "productId": 2748,
+        "productPrice": 128.00,
+        "imgstars": "img/fetured/stars.png",
+        "quantity": 1
+    },
+    {
+        "productLink": "single-page.html",
+        "productImg": "img/fetured/2772.png",
+        "productTitle": "Mango People Alexa Sweater",
+        "productId": 2772,
+        "productPrice": 99.00,
+        "imgstars": "img/fetured/stars.png",
+        "quantity": 1
+    },
+    {
+        "productLink": "single-page.html",
+        "productImg": "img/fetured/2782.png",
+        "productTitle": "Mango People Agnes Top",
+        "productId": 2782,
+        "productPrice": 30.00,
+        "imgstars": "img/fetured/stars.png",
+        "quantity": 1
+    },
+    {
+        "productLink": "single-page.html",
+        "productImg": "img/fetured/2783.png",
+        "productTitle": "Mango People Sylva Sweater",
+        "productId": 2783,
+        "productPrice": 73.00,
+        "imgstars": "img/fetured/stars.png",
+        "quantity": 1
+    }
+]
